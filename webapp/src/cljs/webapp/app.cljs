@@ -3,19 +3,16 @@
    [reagent.core :as reagent :refer [atom]]
    [webapp.components :as comps]))
 
-(defn some-component []
 
+
+(defn main-component []
   [:div
-   [:h3 "I am a component!"]
-   [:p.someclass
-    "I have " [:strong "bold"]
-    [:span {:style {:color "red"}} " and red"]
-    " text."]])
-
-(defn calling-component []
-  [comps/navbar-component
-   [:div "The mother of all components"]])
+   [comps/navbar-component
+    [:div
+     [:span "some text"]
+     [:div
+      [:p "more text"]]]]])
 
 (defn init []
-  (reagent/render-component [calling-component]
+  (reagent/render-component [main-component]
                             (.getElementById js/document "container")))

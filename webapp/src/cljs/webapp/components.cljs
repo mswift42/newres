@@ -16,6 +16,6 @@
      [:a.mdl-navigation__link {:href ""} "About"]
      [:a.mdl-navigation__link {:href ""} "Projects"]]]
    [:main.mdl-layout__content
-    [:div.content
+    [:div.page-content
      content]]])
 
