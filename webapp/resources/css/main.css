@@ -1,0 +1,10 @@
+.layoutheader-transparent {
+    background: url('/images/reykjavikheader.png') center / cover;
+
+
+}
+
+.layoutheader-transparent .mdl-layout__haeader,
+.layoutheader-transparent .mdl-layout__drawer-button {
+    color: white;
+}
