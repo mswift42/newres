@@ -1,5 +1,8 @@
+p, span {
+    color:white;
+}
 .layoutheader-transparent {
-    background: url('/images/reykjavikheader.png') center / cover;
+    background: url('/images/green1.jpg') center / cover;
 
 
 }
