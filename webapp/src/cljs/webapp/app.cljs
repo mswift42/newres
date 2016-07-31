@@ -1,7 +1,10 @@
 (ns webapp.app
-  (:require [reagent.core :as reagent :refer [atom]]))
+  (:require
+   [reagent.core :as reagent :refer [atom]]
+   [webapp.components :as comps]))
 
 (defn some-component []
+
   [:div
    [:h3 "I am a component!"]
    [:p.someclass
@@ -10,7 +13,8 @@
     " text."]])
 
 (defn calling-component []
-  [:div "The mother of all components"])
+  [comps/navbar-component
+   [:div "The mother of all components"]])
 
 (defn init []
   (reagent/render-component [calling-component]
