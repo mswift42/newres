@@ -1,5 +1,4 @@
 p, span {
-    color:white;
 }
 .layoutheader-transparent {
     background: url('/images/green1.jpg') center / cover;
@@ -10,4 +9,10 @@ p, span {
 .layoutheader-transparent .mdl-layout__haeader,
 .layoutheader-transparent .mdl-layout__drawer-button {
     color: white;
+}
+
+.mdl-card {
+    width:98%;
+    margin:1em;
+    padding:1em;
 }
